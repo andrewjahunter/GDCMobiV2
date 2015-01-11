@@ -4,6 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.godochurch.m"
+        versionCode = "704"
         version   = "2.0.0">
 
   <name>Godochurch V2</name>
