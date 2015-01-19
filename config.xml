@@ -4,10 +4,10 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.godochurch.m"
-        versionCode = "704"
+        versionCode = "705"
         version   = "2.0.0">
 
-  <name>Godochurch V2</name>
+  <name>Godochurch</name>
 
   <description>
     You do ministry, we do admin
@@ -18,18 +18,18 @@
   </author>
 
   <gap:config-file platform="ios" parent="CFBundleVersion">
-    <string>2.0.0</string>
+    <string>2.0.1</string>
   </gap:config-file>
 
   <gap:config-file platform="ios" parent="CFBundleShortVersionString">
 
-    <string>200</string>
+    <string>201</string>
 
   </gap:config-file>
 
   <preference name="permissions"                value="none"/>
 
-  <preference name="splash-screen-duration" value="3000" />
+  <preference name="splash-screen-duration" value="1000" />
   <preference name="phonegap-version"  value="3.6.3" />
   <preference name="orientation"                value="default" />
   <preference name="fullscreen"                 value="false" />
