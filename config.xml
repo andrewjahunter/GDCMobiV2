@@ -56,7 +56,6 @@
 <gap:plugin name="tr.bel.mamak.sms_plagin"  />
   <gap:plugin name="com.hutchind.cordova.plugins.streamingmedia"  />
   <gap:plugin name="org.apache.cordova.camera"  />
-  <gap:plugin name="co.mwater.foregroundcameraplugin" version="0.1.1" />
   
   <!--<feature name="http://api.phonegap.com/1.0/device" />-->
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
