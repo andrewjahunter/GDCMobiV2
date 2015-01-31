@@ -10,21 +10,25 @@
         window.gddAppRestart = function () {
             alert("In App start")
             if ((document.URL.indexOf('http://') === -1) && (document.URL.indexOf('https://') === -1)) {
-
-
-                if (device.platform == 'android' || device.platform == 'Android') {
-
-                    alert("Lets load android")
-                    location.href = "file:///android_asset/www/index.html"
+                var appCloseErr = "A device error has occured in your phone, please close and restart the application on your phone."
+                if (device) {
+                    if (device.platform) {
+                        if (device.platform == 'android' || device.platform == 'Android') {
+                            location.href = "file:///android_asset/www/index.html"
+                        } else {
+                            alert(location.href)
+                            location.href = "index.html"
+                        }
+                    } else {
+                        alert(appCloseErr)
+                    }
                 } else {
-                    location.href = "index.html"
+                    alert(appCloseErr)
                 }
 
 
-
-
             } else {
-                location.href = "index.html"
+                window.location.href = "index.html";
             }
 
         };
