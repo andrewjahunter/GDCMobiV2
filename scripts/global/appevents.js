@@ -2,7 +2,7 @@
 
 
 $(document).on("pagecreate", function (event, ui) {
-    alert("Create")
+   // alert("Create")
     if (gdd) {
         if (gdd.utils) {
             if (gdd.utils.appReady()) {
@@ -15,7 +15,7 @@ $(document).on("pagecreate", function (event, ui) {
 });
 
 $(document).on("pagecontainershow", function (event, ui) {
-    alert("Show")
+    //alert("Show")
     if (gdd) {
         if (gdd.utils) {
             if (gdd.utils.appReady()) {
