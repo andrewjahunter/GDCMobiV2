@@ -8,11 +8,13 @@
         window.gddAppInfo = 'appcode:1000|version:1.2.0'
         window.gdd = null
         window.gddAppRestart = function () {
-
+            alert("In App start")
             if ((document.URL.indexOf('http://') === -1) && (document.URL.indexOf('https://') === -1)) {
 
 
                 if (device.platform == 'android' || device.platform == 'Android') {
+
+                    alert("Lets load android")
                     location.href = "file:///android_asset/www/index.html"
                 } else {
                     location.href = "index.html"
