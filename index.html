@@ -10,7 +10,7 @@
         window.gddStartUrl = location.href;
         window.gddAppRestart = function () {
            // alert("Start URL: " + window.gddStartUrl)
-            location.href = window.gddStartUrl;
+            location.href = window.gddStartUrl + '?' + (new Date).getTime();
 
 
             //if ((document.URL.indexOf('http://') === -1) && (document.URL.indexOf('https://') === -1)) {
