@@ -9,7 +9,7 @@
 </head>
 <body>
 
-   
+
     <div data-role="page" id="pg_signin" data-theme="a">
 
         <div id="signinContent" style="display:none">
@@ -33,7 +33,7 @@
 
 
                 <div class="pgContent">
-                
+
 
                     <div class="signinsubview signinstart">
 
@@ -55,7 +55,7 @@
 
 
                             .subViewClass {
-                                margin-top: 50px;
+                                margin-top: 20px;
                             }
                         </style>
 
@@ -265,10 +265,11 @@
 
 
 
-                        
-                        <div class="ui-btn ui-mini  ui-btn-c btnLoginIn ">Have an account? Sign In</div>
+
+                        <div class="ui-btn ui-mini  ui-btn-c btnLoginIn ">Log In or Create new account</div>
                         <div class="ui-btn ui-mini btnSkipRegContinueToApp ">Continue without signing in</div>
-                        
+                        <div class="ui-btn ui-mini btnRegisterNewAccount " style="display:none" id="btnMainRegister">Are you new? Sign up</div>
+
 
 
 
@@ -279,257 +280,286 @@
                     </div>
 
                     <div class="signinsubview signinview subViewClass" style="display:none">
-                        <input type="text" data-clear-btn="true" id="txtUserName" value="" placeholder="enter username">
+                        <h3 style="color:white; text-align:center">Log In</h3>
+                        <input type="text" data-clear-btn="true" id="txtUserName" value="" placeholder="enter email or username">
                         <input type="password" data-clear-btn="true" id="txtPassword" value="" placeholder="enter password">
-                        <div class="ui-btn ui-mini ui-btn-inline" id="btnSignIn">Sign In</div>
+                        <div class="ui-btn ui-mini ui-btn-inline" id="btnSignIn">Log In</div>
                         <div class="ui-btn ui-mini  ui-btn-inline btnForgotInfo">Forgot Info?</div>
-                     
+                        <hr />
+
+
+                        <div class="ui-btn ui-mini ui-btn-c btnRegisterNewAccount" style="margin-top:50px">Sign Up with your church</div>
+
                     </div>
 
                     <div class="signinsubview signinforgotinfo subViewClass" style="display:none">
-                        <input type="text" id="txtRecover" data-clear-btn="true" value="" placeholder="email OR username">
+                        <div style="text-align:center; color:white; margin-top:15px; margin-bottom:15px" id="signInReg1HeaderText">
+                           To recover your log in information enter either your email address or username that you used when you signed up. Click the 'Recover Info' button
+                            and we and we will email you the information you require.
+                        </div>
+
+                        <input type="text" id="txtRecover" data-clear-btn="true" value="" placeholder="enter email or username">
 
                         <div class="ui-btn ui-mini" id="btnRecoverInfo">Recover Info</div>
 
                     </div>
 
                     <div class="signinsubview signintoc" style="display:none">
+                        <div id="signintocsummary" >
 
-                       
+                            <div style="text-align:justify; color:white; margin-top:50px">
+                                By signing up you agree that you have read our <span  class="btnViewTocDetail" style="color:blue">Privacy Policy.</span>
+                                You may receive news and messages from us occasionally and can opt-out at ay time.
+                               
+                            </div>
 
-                      <h3 style="text-align:center">Our Privacy Policy</h3>
-                        <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
-                            <div data-role="collapsible" data-collapsed="false">
-                                <h3>Overview</h3>
-
-                                <p >
-                                    This policy describes what information we collect and how it is used and shared. Our goal is to help churches by providing administrative and communication tools that are essential to achieve their mission.
-                                    Remember once you have signed in you can
-                                    fully manage what information you would like us to send you.
-                                </p>
+                            <div style="text-align:justify; color:white; margin-top:50px">
+                               To continue click the 'Accept' button at the top of the screen.
 
                             </div>
 
+                         
 
-                            <div data-role="collapsible">
-                                <h3>What data do we collect?</h3>
-                                
-                                <strong>Information you provide.</strong>
-                                <p>
-                                    We collect the content and other information you provide when you use our services, including when you register with your church and when you interact with the various features that the church has enabled on the application.
-                                </p>
-                            <strong>Your interaction with our services</strong>
-                                <p>
-                                    We keep track of your of the information relating to the groups you lead or are a member of. As a church we must give you
-                                    permission to use the groups interface. You can request this access from the application. We also keep track of any lists you are a part of
-                                    or events you have registered for. At any time you can remove yourself from these list and unregister for events.
-                                </p>
-                                <strong>Device Information</strong>
-                                <p>We will at times use the following information from your device:</p>
-                                <ul>
-                                    <li>Location data is used to set the default location for some of the modules that allow you to interact with a map. E.g. when you
-                                    indicate the location of your home address we will use your current location to default the map interface.</li>
-                                    <li>We will access the OS data of your device in order to provide you with the best user experience when you are using the application. We do not 
-                                    store this information on our servers.</li>
-
-                                </ul>
-                              
-                            </div>
-                            <div data-role="collapsible">
-                                <h3>What do we use the data for?</h3>
-                               <strong>Communicate with you</strong>
-                                <p>We use the data collected above to communicate with you. 
-                                 </p>
-                                <ul>
-                                    <li>Your news feed can be fully customized so that you only get the news you want to get. You can manage this content in the
-                                    subscriptions section of the application.</li>
-                                    <li>You will also at times receive communication from us if you are a member of certain groups.</li>
-                                    <li>We use the events tool to communicate with you if you have registered for an event.</li>
-                                    <li>At times we will also send out communications to all members of certain lists in the church. You can at any time remove yourself
-                                    from these lists using the application.</li>
-                                </ul>
-                                <strong>Manage the church</strong>
-                                <p>Some of the information e.g. group information we use to help manage and pastor the church. </p>
-                                <strong>
-                                    Sharing your data
-                                </strong>
-                                <p>Under no circumstances is your data ever shared with third parties.</p>
-                            </div>
-                            <div data-role="collapsible">
-                                <h3>How do we communicate?</h3>
-                                <p>
-                                  You can manage what news and information is sent you from the church. We use the following ways to communicate with you.
-                                    
-                                </p>
-                                <ul>
-                                    <li>Email</li>
-                                    <li>Push Notifications</li>
-                                    <li>SMS/Text Messaging</li>
-                                </ul>
-                            </div>
-                            <div data-role="collapsible">
-                                <h3>Managing your content</h3>
-                                <p>You can manage your profile with the church from inside the application. Using the app you can fully customize
-                                what features you would like to be linked to your profile. You can also control what communications are sent to you using the
-                                news subscription modules.</p>
-                            </div>
                         </div>
 
+                        <div id="signintocdetail" style="display:none">
+
+
+                            <h3 style="text-align:center">Our Privacy Policy</h3>
+                            <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+                                <div data-role="collapsible" data-collapsed="false">
+                                    <h3>Overview</h3>
+
+                                    <p>
+                                        This policy describes what information we collect and how it is used and shared. Our goal is to help churches by providing administrative and communication tools that are essential to achieve their mission.
+                                        Remember once you have signed in you can
+                                        fully manage what information you would like us to send you.
+                                    </p>
+
+                                </div>
+
+
+                                <div data-role="collapsible">
+                                    <h3>What do we collect?</h3>
+
+                                    <strong>Information you provide.</strong>
+                                    <p>
+                                        We collect the content and other information you provide when you use our services, including when you register with your church and when you interact with the various features that the church has enabled on the application.
+                                    </p>
+                                    <strong>Your interaction with our services</strong>
+                                    <p>
+                                        We keep track of the groups you lead or of which you are a member. As a church we must give you
+                                        permission to use the groups interface. You can request this access from the application. We also keep track of any lists you are a part of
+                                        or events you have registered for. At any time you can remove yourself from these lists and unregister for events.
+                                    </p>
+                                    <strong>Device Information</strong>
+                                    <p>We will at times use the following information from your device:</p>
+                                    <ul>
+                                        <li>
+                                            Location data is used to set the default location for some of the modules that allow you to interact with a map. E.g. when you
+                                            indicate the location of your home address we will use your current location to default the map interface.
+                                        </li>
+                                        <li>
+                                            We will access the OS data of your device in order to provide you with the best user experience when you are using the application. We do not
+                                            store this information on our servers.
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                <div data-role="collapsible">
+                                    <h3>How do we use data?</h3>
+                                    <strong>Communications</strong>
+                                    <p>
+                                        We use the data collected above to communicate with you.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Your news feed can be fully customized so that you only get the news you want to get. You can manage this content in the
+                                            subscriptions section of the application.
+                                        </li>
+                                        <li>You will also at times receive communication from us if you are a member of certain groups.</li>
+                                        <li>We use the events tool to communicate with you if you have registered for an event.</li>
+                                        <li>
+                                            At times we will also send out communications to all members of certain lists in the church. You can at any time remove yourself
+                                            from these lists using the application.
+                                        </li>
+                                    </ul>
+                                    <strong>Manage the church</strong>
+                                    <p>Some of the information e.g. group information we use to help manage and pastor the church. </p>
+                                    <strong>
+                                        Sharing your data
+                                    </strong>
+                                    <p>Under no circumstances is your data ever shared with third parties.</p>
+                                </div>
+                                <div data-role="collapsible">
+                                    <h3>Communication</h3>
+                                    <p>
+                                        You can manage what news and information is sent to you from the church. we communicate with you in the following ways.
+
+                                    </p>
+                                    <ul>
+                                        <li>Email</li>
+                                        <li>Push Notifications</li>
+                                        <li>SMS/Text Messaging</li>
+                                    </ul>
+                                </div>
+                                <div data-role="collapsible">
+                                    <h3>Managing your content</h3>
+                                    <p>
+                                        You can manage your profile with the church from inside the application. Using the app you can fully customize
+                                        what features you would like to be linked to your profile. You can also control what communications are sent to you using the
+                                        news subscription modules.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
 
-                        <div class="signinsubview signinregister1" style="display:none">
+                    <div class="signinsubview signinregister1" style="display:none">
 
-                            <script id="portallist-template" type="text/html">
-                                <li>
-                                    <a data-bind="attr: {href: '#','data-id':portalId,'data-name':portalName}" class="chooseportal">
-                                        <h5 data-bind="text: portalName"></h5>
-                                    </a>
-                                </li>
-                            </script>
-                            <div style="text-align:center; font-size:small">
-                                Choose your church/ministry from the list below.
-                            </div>
-                            <ul data-role="listview" class="ui-mini" data-filter="true" data-filter-placeholder="Search churches..." data-inset="true" data-theme="a" id="signinPortalList" data-bind="template: { name: 'portallist-template', foreach: $root.cache.appPortals}"></ul>
+                        <script id="portallist-template" type="text/html">
+                            <li>
+                                <a data-bind="attr: {href: '#','data-id':portalId,'data-name':portalName}" class="chooseportal">
+                                    <h5 data-bind="text: portalName"></h5>
+                                </a>
+                            </li>
+                        </script>
+                        <div style="text-align:center; color:white" id="signInReg1HeaderText">
+                            From the list below simply choose your home church
+                        </div>
+                        <ul data-role="listview" class="ui-mini" data-filter="true" data-filter-placeholder="Search churches..." data-inset="true" data-theme="a" id="signinPortalList" data-bind="template: { name: 'portallist-template', foreach: $root.cache.appPortals}"></ul>
 
-                            <div class="ui-btn  ui-btn-a" id="btnSignInChurchMissing">Can't find your church?</div>
-                            <!--<div class="ui-btn ui-mini ui-btn-inline btnGoReg2 " data-view="1">Next</div>-->
+                        <div class="ui-btn  ui-btn-a" id="btnSignInChurchMissing">Can't find your church?</div>
+                        <!--<div class="ui-btn ui-mini ui-btn-inline btnGoReg2 " data-view="1">Next</div>-->
 
+                    </div>
+
+                    <div class="signinsubview signinregister2" style="display:none">
+                        <div style="text-align:center; color:white" id="signInReg1HeaderText">
+                            <div >You are signing up with '<span data-bind="html:regInfo.portalName"></span>' </div>
                         </div>
 
-                        <div class="signinsubview signinregister2" style="display:none">
-                            <div style="text-align:center">
-                              <div style="font-size:small">You are registering an account with '<span data-bind="html:regInfo.portalName"></span>' </div>  
-                            </div>
 
-                            <form id="frmReg2">
-                                <input type="text" class="regInput" data-clear-btn="true" id="txtRegFName" name="txtRegFName" data-bind="value:regInfo.firstName" placeholder="first name">
-                                <input type="text" class="regInput" data-clear-btn="true" id="txtRegLName" name="txtRegLName" data-bind="value:regInfo.lastName" placeholder="last name">
-                                <input type="tel" class="regInput" data-clear-btn="true" id="txtRegMobile" name="txtRegMobile" data-bind="value:regInfo.mobileNumber" placeholder="mobile number">
-
-                                <input type="email" class="regInput" data-clear-btn="true" id="txtRegEmail" name="txtRegEmail" data-bind="value:regInfo.email" placeholder="email address">
-
-                            </form>
-                            <div class="ui-btn ui-mini ui-btn-inline btnGoReg1" data-view="2">Back</div>
-                            <div class="ui-btn ui-mini ui-btn-inline btnGoReg3 " data-view="2">Next</div>
-
-
-
-
-                        </div>
-
-                        <div class="signinsubview signinregister3" style="display:none">
-                            <div style="text-align:center">
-                                <div style="font-size:small">You are registering an account with '<span data-bind="html:regInfo.portalName"></span>' </div>
-                            </div>
-
-                            <input type="text" class="regInput" data-clear-btn="true" id="txtRegUserName" placeholder="user name">
+                        <form id="frmReg2">
+                            <input type="text" class="regInput" data-clear-btn="true" id="txtRegFName" name="txtRegFName" data-bind="value:regInfo.firstName" placeholder="first name">
+                            <input type="text" class="regInput" data-clear-btn="true" id="txtRegLName" name="txtRegLName" data-bind="value:regInfo.lastName" placeholder="last name">
+                            <input type="tel" class="regInput" data-clear-btn="true" id="txtRegMobile" name="txtRegMobile" data-bind="value:regInfo.mobileNumber" placeholder="mobile number">
+                            <input type="email" class="regInput" data-clear-btn="true" id="txtRegEmail" name="txtRegEmail" data-bind="value:regInfo.email" placeholder="email address">
+                            <hr/>
                             <input type="password" class="regInput" data-clear-btn="true" id="txtRegPwd" placeholder="password">
                             <input type="password" class="regInput" data-clear-btn="true" id="txtRegPwdC" placeholder="confirm password">
-                            <div class="ui-btn ui-mini btnGoReg2 ui-btn-inline" data-view="3">Back</div>
-                            <div class="ui-btn ui-mini ui-btn-inline" data-view="3" id="btnRegisterAccount">Register</div>
+                        </form>
+                        <div class="ui-btn ui-mini ui-btn-inline btnGoReg1" >Back</div>
+                        <div class="ui-btn ui-mini ui-btn-inline  " id="btnRegisterAccount" >Sign Up</div>
 
 
-                        </div>
-
-
-
-
-                        <div class="signinsubview signinEmailValidate" style="display:none">
-
-
-
-                            <div class="ui-content">
-                                The email address connected to this account has not yet been verified. Please click the link in the email we sent to you. Click 'Resend Email' below to have the email resent to you.
-                            </div>
-
-                            <div class="ui-btn ui-mini ui-btn-a" id="btnResendEmail">Resend Email</div>
-
-                        </div>
-
-
-                        <div data-role="popup" id="popupPwdInfo" data-theme="a" data-overlay-theme="a" data-dismissible="false" style="max-width: 400px;">
-                            <div data-role="header">
-                                <h1>Password!</h1>
-                            </div>
-                            <div class="ui-content">
-                                <h3 class="ui-title">Password Requirements!</h3>
-                                <div>
-                                    A password must be at least 5 characters long and:
-                                    <ul>
-                                        <li>contain at least 1 number (0-9)</li>
-                                        <li>contain at least 1  letter </li>
-                                    </ul>
-                                </div>
-
-                                <a href="#" class="ui-btn ui-btn-h" data-rel="back">OK</a>
-
-                            </div>
-                        </div>
-
-                        <div data-role="popup" id="popupMissingChurch" data-theme="a" data-overlay-theme="a" data-dismissible="false" style="max-width: 400px;">
-                            <div data-role="header">
-                                <h1>Missing?</h1>
-                            </div>
-                            <div class="ui-content">
-                                <div>Your church/ministry may not be listed for one of two reasons:</div>
-                                <ol>
-                                    <li>They are not registered with Godochurch</li>
-                                    <li>The church is not registered with this application.</li>
-                                </ol>
-                                <div>Either way please contact your church/ministry office and direct them to www.godochurch.com</div>
-
-                                <a href="#" class="ui-btn ui-btn-h" data-rel="back">OK</a>
-
-                            </div>
-                        </div>
-
-
-                        <div data-role="popup" id="popupEmailExists" data-theme="a" data-overlay-theme="a" data-dismissible="false" style="max-width: 400px">
-                            <div data-role="header">
-                                <h1>Message</h1>
-                            </div>
-                            <div class="ui-content">
-                                <h3 class="ui-title">Email Exists</h3>
-                                <div>
-                                    The email '<span id="emailPopupTxt"></span>' has already been taken. Either:
-                                    <ul>
-                                        <li>Log into the account that is connected to this email address, OR</li>
-                                        <li>Use a different email address</li>
-                                    </ul>
-                                </div>
-
-                                <a href="#" class="ui-btn ui-btn-h" data-rel="back">OK</a>
-
-                            </div>
-                        </div>
-
-                        <div data-role="popup" id="popupUserNameExists" data-theme="a" data-overlay-theme="a" data-dismissible="false" style="max-width: 400px">
-                            <div data-role="header">
-                                <h1>Message</h1>
-                            </div>
-                            <div class="ui-content">
-                                <h3 class="ui-title">UserName Exists</h3>
-                                <div>
-                                    The username '<span id="usernamePopupTxt"></span>' has already been taken. Either:
-                                    <ul>
-                                        <li>Log into the account that is connected to this username, OR</li>
-                                        <li>Choose a different username</li>
-                                    </ul>
-                                </div>
-
-                                <a href="#" class="ui-btn ui-btn-h" data-rel="back">OK</a>
-
-                            </div>
-                        </div>
 
 
                     </div>
+
+                
+
+
+
+
+                    <div class="signinsubview signinEmailValidate" style="display:none">
+
+                        <div style="text-align:center; color:white" id="signInReg1HeaderText">
+                            The email address connected to this account has not yet been verified. Please click the link in the email we sent to you. Click 'Resend Email' below to have the email resent to you.
+
+                        </div>
+
+                   
+
+                        <div class="ui-btn ui-mini ui-btn-a" id="btnResendEmail">Resend Email</div>
+
+                    </div>
+
+
+                    <div data-role="popup" id="popupPwdInfo" data-theme="a" data-overlay-theme="a" data-dismissible="false" style="max-width: 400px;">
+                        <div data-role="header">
+                            <h1>Password!</h1>
+                        </div>
+                        <div class="ui-content">
+                            <h3 class="ui-title">Password Requirements!</h3>
+                            <div>
+                                A password must be at least 5 characters long and:
+                                <ul>
+                                    <li>contain at least 1 number (0-9)</li>
+                                    <li>contain at least 1  letter </li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="ui-btn ui-btn-h" data-rel="back">OK</a>
+
+                        </div>
+                    </div>
+
+                    <div data-role="popup" id="popupMissingChurch" data-theme="a" data-overlay-theme="a" data-dismissible="false" style="max-width: 400px;">
+                        <div data-role="header">
+                            <h1>Missing?</h1>
+                        </div>
+                        <div class="ui-content">
+                            <div>Your church/ministry may not be listed for one of two reasons:</div>
+                            <ol>
+                                <li>They are not registered with Godochurch</li>
+                                <li>The church is not registered with this application.</li>
+                            </ol>
+                            <div>Either way please contact your church/ministry office and direct them to www.godochurch.com</div>
+
+                            <a href="#" class="ui-btn ui-btn-h" data-rel="back">OK</a>
+
+                        </div>
+                    </div>
+
+
+                    <div data-role="popup" id="popupEmailExists" data-theme="a" data-overlay-theme="a" data-dismissible="false" style="max-width: 400px">
+                        <div data-role="header">
+                            <h1>Message</h1>
+                        </div>
+                        <div class="ui-content">
+                            <h3 class="ui-title">Email Exists</h3>
+                            <div>
+                                The email '<span id="emailPopupTxt"></span>' has already been taken. Either:
+                                <ul>
+                                    <li>Log into the account that is connected to this email address, OR</li>
+                                    <li>Use a different email address</li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="ui-btn ui-btn-h" data-rel="back">OK</a>
+
+                        </div>
+                    </div>
+
+                    <div data-role="popup" id="popupUserNameExists" data-theme="a" data-overlay-theme="a" data-dismissible="false" style="max-width: 400px">
+                        <div data-role="header">
+                            <h1>Message</h1>
+                        </div>
+                        <div class="ui-content">
+                            <h3 class="ui-title">UserName Exists</h3>
+                            <div>
+                                The username '<span id="usernamePopupTxt"></span>' has already been taken. Either:
+                                <ul>
+                                    <li>Log into the account that is connected to this username, OR</li>
+                                    <li>Choose a different username</li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="ui-btn ui-btn-h" data-rel="back">OK</a>
+
+                        </div>
+                    </div>
+
+
+                </div>
 
 
             </div>
 
-            <div data-role="footer" data-theme="a" data-tap-toggle="false"  data-position="fixed">
+            <!--<div data-role="footer" data-theme="a" data-tap-toggle="false"  data-position="fixed">
 
 
                 <div class="signinsubview signinview signinstart" style="text-align:center">
@@ -539,7 +569,7 @@
 
 
 
-            </div>
+            </div>-->
 
         </div>
 

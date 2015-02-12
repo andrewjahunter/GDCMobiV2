@@ -48,11 +48,12 @@ $(document).on("pagecontainershow", function (event, ui) {
                     })
                 }
                 
-                
+                $(".portalName").html(gdd.session.activeSession.portalName())
 
 
                 $(".btnSignInFromApp").off().on(gdd.click(), function () {
-                    gdd.session.signOut();
+                    gdd.pages.signin.view.signUpFromAppRequested = true;
+                    gdd.loadPage(gdd.pages.signin)
                 })
                
 
@@ -264,7 +265,7 @@ $(document).on("pagecontainershow", function (event, ui) {
 
             
                 $(".pgContent").on("swipeleft", function () {
-                    if (gdd.utils.activePage.id != "pg_index") {
+                    if ((gdd.utils.activePage.id != "pg_index") && (gdd.utils.activePage.id != "pg_signin")) {
                         $("#appMenuPanel").panel("open");
                     }
                    
