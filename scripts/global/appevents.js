@@ -51,8 +51,13 @@ $(document).on("pagecontainershow", function (event, ui) {
                 $(".portalName").html(gdd.session.activeSession.portalName())
 
 
-                $(".btnSignInFromApp").off().on(gdd.click(), function () {
+                $(".btnSignUpFromApp").off().on(gdd.click(), function () {
                     gdd.pages.signin.view.signUpFromAppRequested = true;
+                    gdd.loadPage(gdd.pages.signin)
+                })
+
+                $(".btnSignInFromApp").off().on(gdd.click(), function () {
+                    gdd.pages.signin.view.signUpFromAppRequested = false;
                     gdd.loadPage(gdd.pages.signin)
                 })
                
