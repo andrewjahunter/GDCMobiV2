@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.godochurch.m"
-        versionCode = "709"
-        version   = "2.0.4">
+        versionCode = "710"
+        version   = "2.0.5">
 
   <name>Godochurch</name>
 
@@ -18,12 +18,12 @@
   </author>
 
   <gap:config-file platform="ios" parent="CFBundleVersion">
-    <string>2.0.4</string>
+    <string>2.0.5</string>
   </gap:config-file>
 
   <gap:config-file platform="ios" parent="CFBundleShortVersionString">
 
-    <string>204</string>
+    <string>205</string>
 
   </gap:config-file>
   
