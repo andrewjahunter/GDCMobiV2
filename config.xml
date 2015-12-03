@@ -50,13 +50,13 @@
   <gap:plugin name="org.apache.cordova.device-orientation" />
   <gap:plugin name="org.apache.cordova.geolocation" />
   <gap:plugin name="org.apache.cordova.network-information" />
-  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.3" />
-  <gap:plugin name="org.apache.cordova.media" version="0.2.8" />
+  <gap:plugin name="org.apache.cordova.inappbrowser"  />
+  <gap:plugin name="org.apache.cordova.media"  />
   <gap:plugin name="nl.x-services.plugins.socialsharing" />
 <gap:plugin name="tr.bel.mamak.sms_plagin"  />
   <gap:plugin name="com.hutchind.cordova.plugins.streamingmedia"  />
   <gap:plugin name="org.apache.cordova.camera"  />
-  <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
+  <gap:plugin name="com.phonegap.plugins.barcodescanner"  />
   
   <!--<feature name="http://api.phonegap.com/1.0/device" />-->
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
