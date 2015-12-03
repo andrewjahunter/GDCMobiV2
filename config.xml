@@ -30,7 +30,7 @@
   <preference name="permissions"                value="none"/>
 
   <preference name="splash-screen-duration" value="1000" />
-  <preference name="phonegap-version"  value="5.2.0" />
+  <preference name="phonegap-version"  value="cli-5.2.0" />
   <preference name="orientation"                value="portrait" />
   <preference name="fullscreen"                 value="false" />
   <preference name="target-device"              value="universal" />
