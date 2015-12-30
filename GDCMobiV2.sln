@@ -1,26 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GDCMobiV2", ".", "{65A5DC2D-2BAF-4601-A1C7-3359E0DE0E7F}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GDCMobiV2", ".", "{57D040CF-5F17-4A34-AE6A-387E32903F46}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_50411"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52911"
 		Debug.AspNetCompiler.PhysicalPath = "..\GDCMobiV2\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50411\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52911\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_50411"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52911"
 		Release.AspNetCompiler.PhysicalPath = "..\GDCMobiV2\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50411\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52911\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "50411"
+		VWDPort = "52911"
 		SlnRelativePath = "..\GDCMobiV2\"
 	EndProjectSection
 EndProject
@@ -29,8 +29,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{65A5DC2D-2BAF-4601-A1C7-3359E0DE0E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65A5DC2D-2BAF-4601-A1C7-3359E0DE0E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D040CF-5F17-4A34-AE6A-387E32903F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D040CF-5F17-4A34-AE6A-387E32903F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
